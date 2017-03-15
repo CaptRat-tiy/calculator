@@ -13,3 +13,11 @@ button {
   border: black 1px solid;
   margin: 4px;
 }
+
+#output {
+  height 25px;
+  width: 100px;
+  color: black;
+  border: 1px black solid;
+  margin: 4px;
+}

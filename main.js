@@ -1,7 +1,7 @@
 // let buttonNodeList = {};
 // DOM manipulation
 function onLoad () {
-  let calculation = [];
+  let input = [];
   /* This "maps" every button into a 'buttonNodelist' object*/
   var buttonNodeList = document.querySelectorAll("button");
   // console.log(buttonNodeList)
@@ -11,9 +11,8 @@ function onLoad () {
     console.log(item.value);
     item.addEventListener("click", (function () {
     document.getElementById('output').innerHTML = item.value;
-    console.log(item.value);
-    calculation.push(item.value);
-    document.getElementById('output').innerHTML = calculation.join("");
+    input.push(item.value);
+    document.getElementById('output').innerHTML = input.join("");
       }))
     }
   };

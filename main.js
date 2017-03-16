@@ -5,11 +5,10 @@ function onLoad () {
   console.log(buttonNodeList)
 
   for (var item of buttonNodeList) {
-    item.addEventListener("click", (function () {
     console.log(item.value)}
+    item.addEventListener("click", (function () { }
     ))
   };
-}
 
 
 window.onload = onLoad;

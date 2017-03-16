@@ -1,13 +1,21 @@
-let buttonNodeList = {};
+// let buttonNodeList = {};
 // DOM manipulation
 function onLoad () {
+  let calculation = [];
+  /* This "maps" every button into a 'buttonNodelist' object*/
   var buttonNodeList = document.querySelectorAll("button");
-  console.log(buttonNodeList)
+  // console.log(buttonNodeList)
 
+/* and this displays every button's into the display*/
   for (var item of buttonNodeList) {
-    console.log(item.value)}
-    item.addEventListener("click", (function () { }
-    ))
+    console.log(item.value);
+    item.addEventListener("click", (function () {
+    document.getElementById('output').innerHTML = item.value;
+    console.log(item.value);
+    calculation.push(item.value);
+    document.getElementById('output').innerHTML = calculation.join("");
+      }))
+    }
   };
 
 
@@ -47,7 +55,7 @@ function modulus (num1, num2) {
 return result;
 }
 
-console.log('script loaded')
+console.log('script loaded');
 //
 //
 // var buttonOne = document.getElementById("buttonOne");
@@ -152,4 +160,3 @@ console.log('script loaded')
 
 
 //This 'output'.innerHTML doesn't load any value, just placeholder
-// document.getElementById("output").value = 1;

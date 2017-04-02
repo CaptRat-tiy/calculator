@@ -4,21 +4,49 @@ function onLoad () {
   let input = [];
   /* This "maps" every button into a 'buttonNodelist' object*/
   var buttonNodeList = document.querySelectorAll(".number");
-  console.log(buttonNodeList)
+  var equalButton = document.getElementById("buttonEquals");
+  equalButton.addEventListener("click", function () {
+    let answer = calculate(input[0], input[2], input[1]);
+    console.log(answer);
+    document.getElementById('output').innerHTML = answer;
+  }
+)
+  // console.log(buttonNodeList)
 
 /* and this displays every button's into the display*/
   for (let item of buttonNodeList) {
     // console.log(item.value);
-    item.addEventListener("click", (function () {
-    document.getElementById('output').value = item.value;
+    item.addEventListener("click", function () {
+    document.getElementById('output').innerHTML = item.value;
     // console.log(item.value);
     input.push(item.value);
-    document.getElementById('output').value = input.join("");
-      }))
+    document.getElementById('output').innerHTML = input.join("");
+      })
     }
   };
 
+
 window.onload = onLoad;
+
+function calculate(num1, num2, operator) {
+  num1 = parseInt(num1);
+  num2 = parseInt(num2);
+  if (operator === "+") {
+    return addNum(num1, num2)
+  }
+  if (operator === "-") {
+    return subtNum (num1, num2)
+  }
+  if (operator === "x") {
+    return multNum (num1, num2)
+  }
+  if (operator === "/") {
+    return divNum (num1, num2)
+  }
+  if (operator === "%") {
+    return modulus (num1, num2)
+  }
+}
 
 // SIMPLE FUNCTIONS
 function addNum (num1, num2) {

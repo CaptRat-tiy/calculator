@@ -17,9 +17,10 @@ button {
 }
 
 #output {
-  height 25px;
+  height 50px;
   width: 100px;
   color: black;
   border: 1px black solid;
   margin: 4px;
+  background-color: white;
 }

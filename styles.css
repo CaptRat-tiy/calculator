@@ -2,9 +2,11 @@ html, body, * {
   box-sizing: border-box;
 }
 
-body {
+.displayCase {
   background: green;
+  width: 200px;
 }
+
 
 button {
   height: 25px;

@@ -2,47 +2,48 @@
   <head>
     <meta charset="utf-8">
     <title>Calculator</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
 
   </head>
   <body>
     <h1>JS Calculator</h1>
   <!-- digits -->
-    <div class="calc">
-      <div class="display">
-        <input type="display" id="output"><p></p></input>
-      </div>
-        <!-- <div class="window"> -->
+    <div class="displayCase">
+      <div class="calc"> <!--doesn't presently exist as a class -->
+        <div class="display"><!--doesn't presently exist as a class -->
+          <input type="display" id="output"><p>here</p></input>
+        </div>
+          <!-- <div class="window"> -->
 
+      </div >
+          <div class="first3">
+            <button id="buttonOne" value="1">1</button>
+            <button id="buttonTwo" value="2">2</button>
+            <button id="buttonThree" value="3">3</button>
+          </div>
+          <div class="middle3">
+            <button id="buttonFour" value="4">4</button>
+            <button id="buttonFive" value="5">5</button>
+            <button id="buttonSix" value="6">6</button>
+          <div class="last3">
+            <button id="buttonSeven" value="7">7</button>
+            <button id="buttonEight" value="8">8</button>
+            <button id="buttonNine" value="9">9</button>
+          </div>
+          <div class="operatorRow">
+            <button id="buttonZero" value="0">0</button>
+          <!-- OPERATORS -->
+            <button id="buttonMult" value="x">x</button>
+            <button id="buttonDivide" value="/">/</button>
+          </div>
+          <div class="operator2row">
+            <button id="buttonAdd" value="+"> + </button>
+            <button id="buttonSubtract" value="-"> - </button>
+            <button id="buttonEquals"value="="> = </button>
+          </div>
         </div>
-        <div class="first3">
-          <button id="buttonOne" value=1>1</button>
-          <button id="buttonTwo" value=2>2</button>
-          <button id="buttonThree" value=3>3</button>
-        </div>
-        <div class="middle3">
-          <button id="buttonFour" value=4>4</button>
-          <button id="buttonFive" value=5>5</button>
-          <button id="buttonSix" value=6>6</button>
-        <div class="last3">
-          <button id="buttonSeven" value=7>7</button>
-          <button id="buttonEight" value=8>8</button>
-          <button id="buttonNine" value=9>9</button>
-        </div>
-        <div class="operatorRow">
-          <button id="buttonZero" value=0>0</button>
-        <!-- OPERATORS -->
-          <button id="buttonMult" value="x">x</button>
-          <button id="buttonDivide" value="/">/</button>
-        </div>
-        <div class="operator2row">
-          <button id="buttonAdd" value="+">+</button>
-          <button id="buttonSubtract" value="-">-</button>
-          <button id="buttonEquals"value="=">=</button>
-        </div>
-      </div>
+      <div> <!--end of displayCase -->
 
-
-    <script src="calc.js"></script>
+    <script src="main.js"></script>
   </body>
 </html>

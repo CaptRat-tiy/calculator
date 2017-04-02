@@ -4,19 +4,19 @@ function onLoad () {
   let input = [];
   /* This "maps" every button into a 'buttonNodelist' object*/
   var buttonNodeList = document.querySelectorAll("button");
-  // console.log(buttonNodeList)
+  console.log(buttonNodeList)
 
 /* and this displays every button's into the display*/
-  for (var item of buttonNodeList) {
-    console.log(item.value);
+  for (let item of buttonNodeList) {
+    // console.log(item.value);
     item.addEventListener("click", (function () {
-    document.getElementById('output').innerHTML = item.value;
+    document.getElementById('output').value = item.value;
+    // console.log(item.value);
     input.push(item.value);
-    document.getElementById('output').innerHTML = input.join("");
+    // document.getElementById('output').innerHTML = input.join("");
       }))
     }
   };
-
 
 window.onload = onLoad;
 

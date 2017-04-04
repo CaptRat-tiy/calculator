@@ -19,6 +19,10 @@ function onLoad () {
     document.getElementById('output').innerHTML = item.value;
     // console.log(item.value);
     input.push(item.value);
+    console.log(input);
+      for (let i = 0; i < input.length; i++) {
+        input(i)
+      }
     document.getElementById('output').innerHTML = input.join("");
       })
     }
